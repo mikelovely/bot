@@ -1,0 +1,9 @@
+version: "3"
+services:
+    bot-php-apache:
+        build:
+            context: ./ops/docker/bot-php-apache
+        volumes:
+            - "./:/var/www/html"
+        ports:
+            - "8060:80"
